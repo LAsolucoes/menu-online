@@ -1,0 +1,172 @@
+:root {
+  --color-backgroud: #fffdf7;
+  --color-black: #212121;
+  --color-text: #4f4f4f;
+  --color-text-out: #90908e;
+  --color-primary: #ffbf00;
+  --color-secondary: #fff2cc;
+  --color-white: #fff;
+  --color-red: #e74c3c;
+  --color-green: #2ecc71;
+  --color-separate: #cccccc;
+}
+
+html,
+body {
+  background-color: var(--color-backgroud);
+  font-family: "Poppins", sans-serif;
+}
+p,
+label {
+  color: var(--color-text);
+}
+
+h4 {
+  color: var(--color-primary);
+}
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+header .btn-status button {
+  background-color: var(--color-primary);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+header .btn-fechar button {
+  background-color: var(--color-white);
+  padding: 15px 25px;
+  border-radius: 17px;
+  border: none;
+  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+main {
+  padding: 20px;
+  margin: auto 5%;
+}
+main div.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main label {
+  display: block;
+}
+main div.col-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+}
+main input,
+select {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  outline: none;
+  width: 100%;
+  max-width: 600px;
+}
+main input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+main input:focus {
+  border: 2px solid var(--color-primary);
+}
+main select:focus {
+  border: 2px solid var(--color-primary);
+}
+main .input-cep .cep {
+  border-radius: 20px 0px 0px 20px !important;
+  max-width: 245px;
+}
+main .input-cep button {
+  background-color: var(--color-primary);
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 0 20px 20px 0;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  margin-left: -4px;
+}
+
+main input.endereco {
+  width: 600px;
+}
+main input.bairro {
+  max-width: 400px;
+}
+main input.numero {
+  max-width: 100px;
+}
+main input.cidade {
+  max-width: 600px;
+}
+main input.complemento {
+  width: 400px;
+}
+main select.uf {
+  max-width: 100px;
+}
+main .resumo-pedido {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+main .resumo-pedido .btn-finalizar button {
+  background-color: var(--color-white);
+  padding: 15px 25px;
+  border-radius: 17px;
+  border: none;
+  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+main .resumo-pedido .btn-finalizar .btn-revisar-pedido {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media (max-width: 700px) {
+  main input,
+  select {
+    width: 100%;
+    max-width: 400px; /* Faz os inputs ocuparem 100% da largura disponível */
+  }
+}
+
+@media (max-width: 500px) {
+  main input,
+  select {
+    width: 100%;
+    max-width: 300px;
+  }
+  main .endereco,
+  main .numero,
+  main .cep,
+  main .cidade,
+  main .complemento {
+    width: 300px !important;
+  }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu On-Line</title>
+    <link rel="stylesheet" href="../menu/css/main.css">
+    <link rel="stylesheet" href="./menu/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Sketch&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="img/logo.png" alt="LogoTipo" title="LogoTipo" class="img-logo">
+            </a>
+            <div id="navbar">
+                <ul>
+                    <li><a href="#reservas" title="Reserva">Reserva</a></li>
+                    <li><a href="#servicos" title="Serviços">Serviços</a></li>
+                    <li><a href="#cardapio" title="Cardápio">Cardápio</a></li>
+                    <li><a href="#depoimentos" title="Depoimentos">Depoimentos</a></li>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="meu-carrinho" id="meu-carrinho" title="Meu carrinho">
+                    Meu carrinho <i class="fas fa-shopping-bag"></i>
+                </button>
+                <button type="button" class="bars" title="Menu de Navegaçao">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- BANNER -->
+        <section class="banner">
+            <div class="content-banner">
+                <h1>Escolha sua
+                    comida <span>favorita.</span>
+                </h1>
+                <p>Aproveite nosso cardápio! Escolha o que deseja e
+                    receba em sua casa de forma rápida e segura.
+                </p>
+                <button type="button" class="ver-cardapio" id="cardapio"><a href="#cardapio">Ver Cardápio</a></button>
+                <button type="button" class="contato" id="contato"><i class="fas fa-phone"></i> (11) 94001-6064</button>
+                <div class="medias-social-banner">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="content-img">
+                <div class="card-banner-img">
+                    <img src="img/burguer.png" alt="Imagem de hambúrguer no banner" title="Imagem de hambúrguer no banner">
+                </div>
+                <div class="content-depoimento">
+                    <p>"Entrega rápida e funcionários simpáticos.
+                        A comida chegou quente e
+                        muito saborosa." <span>AlexMoedo</span>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- SERVIÇOS -->
+        <section class="servicos" id="servicos">
+            <div class="title-servicos">
+                <h4>SEVIÇOS</h4>
+                <h2>Como são nosso Serviços ?</h2>
+            </div>
+            <div class="content-img-servicos">
+                <div class="img-servicos-row">
+                    <img src="img/icone-pedido.svg" alt="Imagem facil de pedir" title="Fácil de pedir">
+                    <h3>Fácil de pedir</h3>
+                    <p>Nossa entrega é sempre pontual, rápida e segura.</p>
+                </div>
+                <div class="img-servicos-row">
+                    <img src="img/icone-delivery.svg" alt="Imagem de entregadores" title="Entrega rápida e segura">
+                    <h3>Entrega rápida</h3>
+                    <p>Você só precisa de alguns passos
+                        para pedir sua comida.</p>
+                </div>
+                <div class="img-servicos-row">
+                    <img src="img/icone-qualidade.svg" alt="Imagem qualidade dos produtos"
+                        title="Qualidade dos produtos">
+                    <h3>Melhor qualidade</h3>
+                    <p>Não só a rapidez na entrega, a qualidade também é o nosso forte</p>
+               </div>
+            </div>
+        </section>
+        <!-- CARDAPIO -->
+        <section class="cardapio" id="cardapio">
+            <div class="title-cardapio">
+                <h3>CARDÁPIO</h3>
+                <h2>Conheça o nosso cardápio</h2>
+            </div>
+            <div class="navegacao-categoria-cardapio">
+                <button type="button"><i class="fa-solid fa-burger"></i> Burgers</button>
+                <button type="button"><i class="fa-solid fa-pizza-slice"></i> Pizzas</button>
+                <button type="button"><i class="fas fa-drumstick-bite"></i> Churrasco</button>
+                <button type="button"><i class="fa-solid fa-bacon"></i> Stakes</button>
+                <button type="button"><i class="fa-solid fa-martini-glass-citrus"></i> Bebidas</button>
+                <button type="button"><i class="fa-solid fa-ice-cream"></i> Sobremesas</button>
+            </div>
+            <div class="produtos-cardapio">
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img01.jpg" alt="Foto do produto">
+                    <h4>Gramercy Taven</h4>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img02.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img03.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img04.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+            </div>
+            <div class="produtos-cardapio">
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img05.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img06.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img07.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img08.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+            </div>
+            <div class="ver-mais" id="ver-mais-cardapio">
+                <button type="button" id="btn-ver-mais">Ver Mais</button>
+            </div>
+            <div class="produtos-cardapio" id="produtos-cardapio">
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img09.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+               </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img10.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img11.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+                <div class="img-produto">
+                    <img src="img/cardapio/burguers/img12.jpg" alt="Foto do produto">
+                    <h3>Gramercy Taven</h3>
+                    <p>R$ 99,00</p>
+                </div>
+            </div>
+        </section>
+        <!-- DEPOIMENTOS -->
+        <section class="depoimentos" id="depoimentos">
+           <div>
+                <img src="img/pizzas.png" alt="Imagem de pizza no depoimento">
+            </div>
+            <div class="content-depoimentos">
+                <div class="title-depoimentos">
+                    <h4>DEPOIMENTOS</h4>
+                    <h1>O que dizem sobre nós?</h1>
+                </div>
+                <div class="depoimentos-clientes">
+                    <div>
+                        <img src="img/diego.jpg" alt="Imagem do Cliente">
+                    </div>
+                    <div class="depoimentos-avaliacao">
+                        <h2>Diego Pereira</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <label>4.5</label>
+                   </div>
+                </div>
+                <div class="content-avaliacao">
+                    <i class="fas fa-quote-left"></i>
+                    <div>
+                        <p>
+                            Muito bom, recomendo demais!
+                            Comida muito bem feita pelo chefe,
+                            atendimento dentro dos parâmetros
+                            e boa comunicação com o cliente.
+                        </p>
+                    </div>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="depoimentos-carrocel">
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                </div>
+            </div>
+        </section>
+        <!-- RESERVAS -->
+        <section class="reservas" id="reservas">
+            <div class="container-reserva">
+                <div class="content-reserva">
+                    <h4>RESERVA</h4>
+                    <h2>Quer reservar um
+                        horário?</h2>
+                    <p>Mande uma mensagem clicando no botão abaixo.
+                        Reserve sua data e horário de forma simples e rápida.</p>
+                    <button type="button" class="fazer-reserva">Fazer Reserva</button>
+                </div>
+                <div class="content-reserva-img">
+                    <img src="img/icone-reserva.svg" alt="Imagem Reserva">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-rodape">
+            <div>
+                <img src="img/logo.png" alt="Imagem LogoTipo" title="LogoTipo">
+            </div>
+            <div>
+                <p><span>Menu On-Line </span>&copy Todos os direitos reservados</p>
+            </div>
+            <div class="medias-social-rodape">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>   
+</body>
+
+</html>
