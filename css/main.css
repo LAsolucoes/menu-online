@@ -9,10 +9,11 @@
   --color-red: #e74c3c;
   --color-green: #2ecc71;
   --color-separate: #cccccc;
+  --color-dark: #000;
 }
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
 }
 
@@ -21,6 +22,8 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
 }
 p,
 label {
@@ -67,21 +70,51 @@ nav li {
 nav li:hover {
   border-bottom: 3px solid var(--color-primary);
 }
-nav .bars {
+
+nav .tema-sun {
+  display: none;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+nav .navbar-col .tema-sun-bars {
+  display: none;
+  color: var(--color-white)
+}
+nav .navbar-col .tema-sun-bars i {
+  color: var(--color-primary);
+}
+nav .bars , .close {
   display: none;
   padding: 5px 10px;
   border: none;
-  background-color: var(--color-white);
+  background-color: var(--color-backgroud);
   transform: scale(2);
   color: var(--color-text);
   cursor: pointer;
+  margin-bottom: 5px;
+
 }
+.navbar-col ul {
+  display: none;
+  background-color: var(--color-backgroud);
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  line-height: 3;
+  position: absolute;
+  z-index: 1;
+  right: 15%;
+  padding: 10px 20px;
+  height: auto;
+}
+
 nav button.meu-carrinho {
   background-color: var(--color-white);
   padding: 5px 15px;
   border-radius: 12px;
   border: none;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   font-size: 0.8rem;
   cursor: pointer;
   transition: 0.6s ease;
@@ -130,7 +163,7 @@ section.banner button {
   padding: 10px 25px;
   border-radius: 12px;
   border: none;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   font-size: 0.8rem;
   cursor: pointer;
   transition: 0.6s ease;
@@ -163,7 +196,7 @@ section.banner div.medias-social-banner i {
   transform: scale(1.5);
   background-color: var(--color-white);
   border-radius: 8px;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   margin: 10px;
   color: var(--color-black);
   font-size: 12px;
@@ -189,7 +222,7 @@ section.banner div.content-depoimento {
   position: absolute;
   right: 8%;
   bottom: -12%;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
 }
 section.banner .content-depoimento p {
   font-size: 0.7rem;
@@ -270,14 +303,14 @@ section.cardapio .navegacao-categoria-cardapio button {
   padding: 8px 15px;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   cursor: pointer;
   transform: scale(1.2);
   color: var(--color-black);
   transition: 0.6s ease;
 }
 section.cardapio .navegacao-categoria-cardapio button:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
 }
 
 section.cardapio .produtos-cardapio {
@@ -292,7 +325,7 @@ section.cardapio .produtos-cardapio {
 section.cardapio .img-produto {
   background-color: var(--color-white);
   padding: 20px;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   border-radius: 10px;
   cursor: pointer;
   transition: 0.6s ease;
@@ -318,7 +351,7 @@ section.cardapio div.ver-mais button {
   padding: 10px 15px;
   border-radius: 17px;
   border: none;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   font-size: 17px;
   cursor: pointer;
   transition: 0.6s ease;
@@ -390,7 +423,7 @@ section.depoimentos .depoimentos-carrocel button {
   padding: 10px 15px;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   font-size: 17px;
   cursor: pointer;
   transition: 0.6s ease;
@@ -410,6 +443,9 @@ section.reservas .container-reserva {
   border-radius: 50px;
   justify-content: space-around;
 }
+section.reservas .content-reserva h2 {
+  color: var(--color-dark) !important;
+}
 section.reservas .content-reserva p {
   white-space: pre-line;
   margin: 5% auto;
@@ -424,7 +460,7 @@ section.reservas .content-reserva button {
   padding: 20px 30px;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   font-size: 17px;
   cursor: pointer;
   transition: 0.6s ease;
@@ -465,7 +501,7 @@ footer .container-rodape .medias-social-rodape i {
   transform: scale(1.5);
   background-color: var(--color-white);
   border-radius: 8px;
-  box-shadow: 0px 0px 14px 0px var(--color-separate);
+  box-shadow: 0px 0px 5px 0px var(--color-separate);
   color: var(--color-black);
   font-size: 12px;
   transition: 0.6s ease;
@@ -474,10 +510,10 @@ footer .container-rodape .medias-social-rodape i:hover {
   background-color: var(--color-primary);
 }
 
+/********************MAXIMO 1100PX**************************/
 
-/**************************************************/
+@media (max-width: 1100px) {
 
-@media (max-width:1100px) {
   section.reservas .content-reserva p {
     font-size: 0.9rem;
   }
@@ -493,6 +529,15 @@ footer .container-rodape .medias-social-rodape i:hover {
     height: 300px;
   }
 }
+
+/* *********** MINIMO 800PX *********************** */
+@media (min-width:800px) {
+
+ nav .navbar-col{
+    display: none;
+  }
+}
+/* ************* MAXIMO 900PX************************* */
 
 @media (max-width: 900px) {
   header {
@@ -513,30 +558,36 @@ footer .container-rodape .medias-social-rodape i:hover {
   p {
     margin-bottom: 25px;
   }
-  
+
+  section.reservas .container-reserva{
+    width: 80%;
+    margin-bottom: 15%;
+  }
+
   section.reservas .content-reserva-img img {
     width: 200px;
     height: 200px;
   }
 }
-
+/* ******************MAXIMO 800PX*************************** */
 @media (max-width: 800px) {
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
+
   nav {
     justify-content: space-around;
     margin: auto;
   }
-  nav ul {
+  nav ul.navbar-row {
     display: none;
   }
   nav button {
     display: none;
   }
-  nav button.bars {
+  nav button.bars  {
     display: block;
+  }
+  section.reservas .container-reserva{
+    width: 80%;
+    margin-bottom: 15%;
   }
 
   section.reservas .content-reserva p {
@@ -554,8 +605,10 @@ footer .container-rodape .medias-social-rodape i:hover {
     height: 200px;
   }
 }
-
+/* **************************************************** */
 @media (max-width: 730px) {
+ 
+
   section.reservas .content-reserva p {
     font-size: 0.7rem;
   }
@@ -570,11 +623,11 @@ footer .container-rodape .medias-social-rodape i:hover {
     width: 200px;
     height: 200px;
   }
-  
+
   footer .container-rodape {
     align-items: center;
   }
-  
+
   footer .container-rodape img {
     width: 100px;
     height: 100px;
@@ -590,47 +643,51 @@ footer .container-rodape .medias-social-rodape i:hover {
     margin: 10px;
     padding: 6px;
     transform: scale(1.2);
-  
-   
   }
 }
 
 @media (max-width: 690px) {
+  
+
   section.reservas .container-reserva {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
   }
-    section.reservas .content-reserva p {
-      font-size: 0.8rem;
-    }
-    section.reservas .content-reserva h2 {
-      font-size: 1.5rem;
-    }
-    section.reservas .content-reserva button {
-      padding: 6px 14px;
-      font-size: 13px;
-    }
-    section.reservas .content-reserva-img img {
-      width: 200px;
-      height: 200px;
-    }
-    footer .container-rodape .medias-social-rodape i {
-      margin: 5px;
-    }
-   
-    
+  section.reservas .content-reserva p {
+    font-size: 0.8rem;
   }
-
+  section.reservas .content-reserva h2 {
+    font-size: 1.5rem;
+  }
+  section.reservas .content-reserva button {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+  section.reservas .content-reserva-img img {
+    width: 200px;
+    height: 200px;
+  }
+  footer .container-rodape .medias-social-rodape i {
+    margin: 5px;
+  }
+}
+@media (max-width: 579px) {
+  section.cardapio .img-produto {
+    width: 80%;
+  
+  }
+  section.reservas .container-reserva{
+    width: 90%;
+    margin-bottom: 15%;
+    text-align: left;
+    padding: 30px;
+  }
+}
 
 @media (max-width: 480px) {
-  body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-x: hidden;
-  }
+  
   header {
     margin: auto;
   }
@@ -654,7 +711,10 @@ footer .container-rodape .medias-social-rodape i:hover {
   }
 
   section.cardapio .title-cardapio h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  section.cardapio .img-produto {
+    width: 90%;
   }
 
   section.depoimentos img {
@@ -665,8 +725,15 @@ footer .container-rodape .medias-social-rodape i:hover {
     text-align: center;
   }
 
+  section.reservas .container-reserva{
+    width: 80%;
+    margin-bottom: 15%;
+    text-align: left;
+    padding: 30px;
+  }
+
   section.reservas .content-reserva h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   section.reservas .content-reserva button {
